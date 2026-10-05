@@ -4,6 +4,18 @@ A cite-or-unknown second brain for [Obsidian](https://obsidian.md) and any agent
 
 [NicholasSpisak/second-brain](https://github.com/NicholasSpisak/second-brain) has the model compile a wiki from a raw inbox. This package keeps authorship with the human: web lookup is opt-in, and it never answers who you are or what you are doing.
 
+## Why use this
+
+Use it when you want an agent that can read your notes and still admit a gap. A model that “knows” your projects will fill a missing note from memory. This vault makes that a wrong answer.
+
+- **Cite or say not in brain.** Every claim comes from a file you can open. If the vault is silent, the agent says so and stops.
+- **Guesses stay labeled.** Agent-written notes start as `inferred`. `stale` means it was true once. Neither is treated as what is true now.
+- **One live list.** Current work lives only in `02-now/tasks.md`. An old checklist in `06-sources/` does not come back as this week’s plan.
+- **Web stays opt-in.** A search runs when you ask to look something up. The result is marked web, cited with a URL, and kept out of `04-knowledge/` unless you ask to save it. It does not answer who you are or what you are doing.
+- **Same files in Obsidian and Cursor.** Wikilinks are the graph. The agent starts at the map of content and follows links. It does not scan the whole vault.
+- **A study mode that waits.** `brain-learn` takes one open check from your task list, asks one question, fetches the official page before it states a fact, and saves a note only when you ask.
+- **Safe to install empty.** Setup copies a blank vault and leaves any file that is already there. Your notes never ship inside the skill.
+
 ## Install
 
 ```bash
