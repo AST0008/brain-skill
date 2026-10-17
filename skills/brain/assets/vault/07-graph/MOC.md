@@ -1,7 +1,7 @@
 ---
 type: system
 status: fact
-updated: 2026-10-05
+updated: 2026-10-17
 sources: []
 related: ["[[entities]]", "[[protocol]]"]
 ---
@@ -10,7 +10,7 @@ related: ["[[entities]]", "[[protocol]]"]
 
 Agent entrypoint. Read this first, then [[focus]] / [[tasks]] / [[waiting]], then [[me]]. Follow links. Do not scan the vault.
 
-If a topic is not listed here and not linked from a note you opened, the answer is **not in brain**.
+If a topic is not listed here and not linked from a note you opened, it is not in the vault. Search the web, label the result as web, and cite the URL. Identity, focus, and “what do I know about me” stay vault-only.
 
 ## Now
 

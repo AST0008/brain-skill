@@ -4,17 +4,18 @@ description: >-
   Initializes a cite-or-unknown Obsidian vault and answers from it. Use when
   the user wants a second brain, a personal knowledge vault, or asks what they
   know, what they are focused on, which projects exist, or to capture a
-  learning. If the vault lacks the answer, say not in brain. Do not use for a
-  study session; use brain-learn.
+  learning. If the vault lacks the answer, search the web and cite the URL.
+  Identity and focus stay not in brain. Do not use for a study session; use
+  brain-learn.
 license: MIT
 metadata:
   author: AST0008
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Brain
 
-Cite a note or say **not in brain**. The human owns the notes. Obsidian is the graph. Cursor is the retrieval UI. Same files.
+Cite a note. If the vault is silent, search the web and label it web. Identity and focus stay **not in brain**. The human owns the notes. Obsidian is the graph. Cursor is the retrieval UI. Same files.
 
 ## Find the vault
 
@@ -36,9 +37,9 @@ Read [references/protocol.md](references/protocol.md) and [assets/vault/.cursor/
 
 1. Start at `07-graph/MOC.md`, then `02-now/`, then `01-identity/`. Follow wikilinks. Do not scan the vault.
 2. Answer only from retrieved notes. Give the file path. Say the status when a note is `inferred` or `stale`. Those are not current fact.
-3. If the vault lacks the answer, say **not in brain**. Do not fill the gap from model memory.
+3. If the vault lacks the answer, search the web. Say it is not in the vault, label the result as web, and cite the URL. Do not fill the gap from model memory. Identity, focus, and “what do I know about me” stay vault-only: if those are missing, say **not in brain**.
 4. `02-now/tasks.md` is the only live task list.
-5. Search the web only when the human asks to look something up, research online, or open a link. Label the result web and cite the URL. Web findings do not answer who they are or what they are doing, and they are not vault facts.
+5. Web findings are not vault facts. Do not write them into `04-knowledge/` or mark them `fact`. Save a `05-learnings/` capture only when the human asks.
 6. New agent text is `status: inferred` unless the human wrote it or it is a verbatim cite from `sources:`. Write a learning only when they ask.
 
 ## Templates

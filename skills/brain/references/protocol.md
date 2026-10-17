@@ -1,7 +1,7 @@
 ---
 type: system
 status: fact
-updated: 2026-10-05
+updated: 2026-10-17
 sources: []
 related: ["[[MOC]]"]
 ---
@@ -47,7 +47,7 @@ related: []
 
 1. Start at [[MOC]], then `02-now/`, then `01-identity/`. Follow links. Do not scan the whole vault by default.
 2. Answer only from retrieved notes. Quote or paraphrase and give the file path.
-3. If the vault does not contain it, say **not in brain**. Do not complete from model memory.
+3. If the vault does not contain it, search the web. Say it is not in the vault, label the answer as web, and cite URLs. Do not complete from model memory.
 4. Never promote `inferred` or `stale` to current fact.
 5. `02-now/tasks.md` is the only live task list.
 
@@ -55,7 +55,7 @@ related: []
 
 Cursor can search the open web. That is not the vault.
 
-1. Use web search or URL fetch only when the human asks to look something up, research online, or open a link.
+1. If the vault lacks the answer, search the web automatically. Also search when the human asks to look something up, research online, or open a link.
 2. Do not use the web to answer “what do I know / am I doing / who am I.” Those stay vault-only. If missing, say **not in brain**.
 3. Label web findings as web and cite URLs. They are not vault facts.
 4. Do not write web findings into `04-knowledge/` or treat them as `fact`. To keep them, write a `05-learnings/` capture (`inferred`, `sources:` URLs) and link from [[inbox]] only if the human asks to save.

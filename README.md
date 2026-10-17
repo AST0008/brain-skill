@@ -1,17 +1,17 @@
 # Brain
 
-A cite-or-unknown second brain for [Obsidian](https://obsidian.md) and any agent that reads [Agent Skills](https://agentskills.io). The human writes the notes. The agent starts at the map of content, cites a file, and says **not in brain** when the vault is silent.
+A cite-or-unknown second brain for [Obsidian](https://obsidian.md) and any agent that reads [Agent Skills](https://agentskills.io). The human writes the notes. The agent starts at the map of content and cites a file. A missing note becomes a labeled web search. Identity and focus still get **not in brain**.
 
-[NicholasSpisak/second-brain](https://github.com/NicholasSpisak/second-brain) has the model compile a wiki from a raw inbox. This package keeps authorship with the human: web lookup is opt-in, and it never answers who you are or what you are doing.
+[NicholasSpisak/second-brain](https://github.com/NicholasSpisak/second-brain) has the model compile a wiki from a raw inbox. This package keeps authorship with the human. When a note is missing, the agent searches the web, labels the result as web, and cites the URL. It still never answers who you are or what you are doing from the web.
 
 ## Why use this
 
 Use it when you want an agent that can read your notes and still admit a gap. A model that “knows” your projects will fill a missing note from memory. This vault makes that a wrong answer.
 
-- **Cite or say not in brain.** Every claim comes from a file you can open. If the vault is silent, the agent says so and stops.
+- **Cite the file.** Every vault claim comes from a note you can open. A silent vault is not a guess from memory.
 - **Guesses stay labeled.** Agent-written notes start as `inferred`. `stale` means it was true once. Neither is treated as what is true now.
 - **One live list.** Current work lives only in `02-now/tasks.md`. An old checklist in `06-sources/` does not come back as this week’s plan.
-- **Web stays opt-in.** A search runs when you ask to look something up. The result is marked web, cited with a URL, and kept out of `04-knowledge/` unless you ask to save it. It does not answer who you are or what you are doing.
+- **A missing note is a web search, not a guess.** If the vault is silent, the agent searches, says it is not in the vault, and cites the URL. Identity, focus, and “what do I know about me” stay vault-only: those still get **not in brain**. Web text stays out of `04-knowledge/` unless you ask to save it.
 - **Same files in Obsidian and Cursor.** Wikilinks are the graph. The agent starts at the map of content and follows links. It does not scan the whole vault.
 - **A study mode that waits.** `brain-learn` takes one open check from your task list, asks one question, fetches the official page before it states a fact, and saves a note only when you ask.
 - **Safe to install empty.** Setup copies a blank vault and leaves any file that is already there. Your notes never ship inside the skill.
